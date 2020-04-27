@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Zodii";
+
+service Sign{
+	rpc CheckDate(request) returns (reply);
+}
+
+message request{
+string date=1;
+}
+
+message reply{
+string astrologicalSign=1;
+}
